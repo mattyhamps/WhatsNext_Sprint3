@@ -12,6 +12,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 /**
@@ -22,22 +23,30 @@ public class CreateProfileUIController {
     @FXML private TextField username;
     @FXML private PasswordField cpassword;
     @FXML private PasswordField password;
-    
-    private ProfileList profileList;
+    @FXML private AnchorPane pane;
+    private ProfileList profileList = ProfileList.getTheProfileList();
     
     
     @FXML protected void handleNewProfileButtonAction(ActionEvent event) {
-        Profile profile = new Profile(username.getText(), cpassword.getText());
-        try{
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("MainMenu.fxml"));
-            Parent root = (Parent) fxmlLoader.load();
-            Stage stage1 = new Stage();
-            Scene scene = new Scene(root, 400, 400);
-            stage1.setScene(scene);
+        String theUsername = username.getText();
+        String thePassword = password.getText();
+        String theCPassword = cpassword.getText();
+        if(thePassword.equals(theCPassword))
+        {
+            Profile profile = new Profile(username.getText(), cpassword.getText());
+            profileList.addProfile(profile);
+            try{
+                Stage stage1 = (Stage)pane.getScene().getWindow();
+                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("MainMenu.fxml"));
+                Parent root = (Parent) fxmlLoader.load();
+                stage1.setWidth(400);
+                Scene scene = new Scene(root, 400, 400);
+                stage1.setScene(scene);
 
-            stage1.show();
-        }catch(Exception e){
+                stage1.show();
+            }catch(Exception e){
 
+            }
         }
     }
 }

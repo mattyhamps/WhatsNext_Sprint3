@@ -12,13 +12,23 @@ import java.util.ArrayList;
  * @author Laura
  */
 public class ProfileList {
-    private ArrayList<Profile> profileList;
+    private ArrayList<Profile> theUserList;
     private UserList ulist;
-    public ProfileList()
+    private static ProfileList theProfileList;
+    
+    private ProfileList()
     {
-        profileList = new ArrayList();
-        
-       
+        theUserList = new ArrayList();
+    }
+    
+    public static ProfileList getTheProfileList()
+    {
+        if (theProfileList != null){
+            return theProfileList;
+        }else {
+            theProfileList = new ProfileList();
+            return theProfileList;
+        }
         
     }
     
@@ -28,6 +38,6 @@ public class ProfileList {
     }
 
     public ArrayList<Profile> getProfileList() {
-        return profileList;
+        return theUserList;
     }
 }

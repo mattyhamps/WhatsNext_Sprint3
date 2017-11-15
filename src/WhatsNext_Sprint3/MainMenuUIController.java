@@ -10,6 +10,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
 
@@ -18,16 +19,17 @@ import javafx.stage.Stage;
  * @author mattb
  */
 public class MainMenuUIController {
-    
+    @FXML private AnchorPane pane;
     
     @FXML protected void handleProfileButtonAction(ActionEvent event) {
         
         
         try{
+            Stage stage1 = (Stage)pane.getScene().getWindow();
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("CreateProfile.fxml"));
             Parent root = (Parent) fxmlLoader.load();
-            Stage stage1 = new Stage();
-            Scene scene = new Scene(root, 400, 400);
+            stage1.setWidth(600);
+            Scene scene = new Scene(root, 600, 400);
             stage1.setScene(scene);
 
             stage1.show();
