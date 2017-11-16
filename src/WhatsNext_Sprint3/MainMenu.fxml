@@ -10,7 +10,7 @@
         <URL value="@MainMenu.css" />
     </stylesheets>
    <children>
-      <Text fill="WHITE" layoutX="163.0" layoutY="77.0" text="Main Menu" />
+      <Text fill="BLACK" layoutX="163.0" layoutY="77.0" text="Main Menu" />
       <Button layoutX="31.0" layoutY="100.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="149.0" text="Search for a Book" />
       <Button layoutX="211.0" layoutY="100.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="149.0" text="Search for a Movie" />
       <Button layoutX="143.0" layoutY="212.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="115.0" text="Settings" />
