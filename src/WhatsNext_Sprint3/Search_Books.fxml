@@ -23,7 +23,7 @@
          </font>
       </Text>
       <TextField layoutX="95.0" layoutY="174.0" />
-      <Button layoutX="244.0" layoutY="174.0" mnemonicParsing="false" text="Button" />
+      <Button layoutX="244.0" layoutY="174.0" mnemonicParsing="false" text="Search" />
       <Button layoutX="137.0" layoutY="208.0" mnemonicParsing="false" text="Add Filters" />
       <Button layoutX="133.0" layoutY="265.0" mnemonicParsing="false" text="Rerturn to Main Menu" />
    </children>
