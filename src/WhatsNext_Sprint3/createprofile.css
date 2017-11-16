@@ -3,7 +3,7 @@ root {
     display: block;
 }
 .root {
--fx-background-color: teal;
+-fx-background-color: #99ccff;
 }
 .label {
     -fx-font-size: 12px;

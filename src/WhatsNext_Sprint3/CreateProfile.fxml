@@ -7,21 +7,28 @@
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" fx:id="pane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WhatsNext_Sprint3.CreateProfileUIController">
+<AnchorPane id="AnchorPane" fx:id="pane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.151" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WhatsNext_Sprint3.CreateProfileUIController">
     <stylesheets>
         <URL value="@CreateProfile.css" />
     </stylesheets>
    <children>
-      <Text fill="Black" layoutX="300.0" layoutY="100.0" text="Create a Profile" />
-      <Button layoutX="300.0" layoutY="275.0" mnemonicParsing="false" onAction="#handleNewProfileButtonAction" text="Submit" />
-      <PasswordField id="password" fx:id="password" layoutX="300.0" layoutY="180.0" />
-      <TextField id="username" fx:id="username" layoutX="300.0" layoutY="130.0" onAction="#handleNewProfileButtonAction" />
-      <PasswordField id="cpassword" fx:id="cpassword" layoutX="300.0" layoutY="230.0" onAction="#handleNewProfileButtonAction" />
-      <Label layoutX="180.0" layoutY="130.0" text="Username" textFill="Black" />
-      <Label layoutX="180.0" layoutY="180.0" text="Password" textFill="Black" />
-      <Label layoutX="180.0" layoutY="230.0" text="Confirm Password" textFill="Black" />
+      <Text fill="Black" layoutX="199.0" layoutY="80.0" text="Create a Profile" textAlignment="CENTER">
+         <font>
+            <Font size="30.0" />
+         </font></Text>
+      <Button layoutX="281.0" layoutY="275.0" mnemonicParsing="false" onAction="#handleNewProfileButtonAction" text="Submit" />
+      <PasswordField id="password" fx:id="password" layoutX="281.0" layoutY="150.0" />
+      <TextField id="username" fx:id="username" layoutX="281.0" layoutY="100.0" onAction="#handleNewProfileButtonAction" />
+      <PasswordField id="cpassword" fx:id="cpassword" layoutX="281.0" layoutY="225.0" onAction="#handleNewProfileButtonAction" />
+      <Label layoutX="161.0" layoutY="100.0" text="Username" textFill="Black" />
+      <Label layoutX="161.0" layoutY="150.0" text="Password" textFill="Black" />
+      <Label layoutX="161.0" layoutY="225.0" text="Confirm Password" textFill="Black" />
       <Hyperlink layoutX="14.0" layoutY="363.0" text="Help" textFill="#61e055" />
+      <Label layoutX="281.0" layoutY="125.0" text="Usernames should be between 8-20 characterrs" />
+      <Label layoutX="281.0" layoutY="175.0" text="Passwords should be between 8-20 characters " />
+      <Label layoutX="281.0" layoutY="192.0" text="and contain at least one number" />
    </children>
 </AnchorPane>
