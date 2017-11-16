@@ -12,7 +12,7 @@
 
 <AnchorPane id="AnchorPane" fx:id="pane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.151" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WhatsNext_Sprint3.CreateProfileUIController">
     <stylesheets>
-        <URL value="@CreateProfile.css" />
+        <URL value="@createprofile.css" />
     </stylesheets>
    <children>
       <Text fill="Black" layoutX="199.0" layoutY="80.0" text="Create a Profile" textAlignment="CENTER">
