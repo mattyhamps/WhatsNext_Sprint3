@@ -14,7 +14,7 @@ import javafx.fxml.Initializable;
  *
  * @author djb5755
  */
-public class IncognitoSearchController implements Initializable {
+public class SearchController implements Initializable {
 
     /**
      * Initializes the controller class.
