@@ -5,10 +5,33 @@
  */
 package WhatsNext_Sprint3;
 
+import java.util.ArrayList;
+
 /**
  *
- * @author Laura
+ * @author Laura 
  */
 public class BookList {
+    private ArrayList <Book> bookList;
     
+    public BookList(){
+        
+        bookList = new ArrayList();
+        
+        Book book1 = new Book("The Great Gatsby","F. Scott Fitzgerald","Drama","Parties in New York");
+        
+        bookList.add(book1);
+  
+        
+        
+    }
+    
+    public void addBooks(Book book)
+    {
+        getBookList().add(book);
+    }
+
+    public ArrayList<Book> getBookList() {
+        return bookList;
+    }
 }

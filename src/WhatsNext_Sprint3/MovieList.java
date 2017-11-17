@@ -16,11 +16,23 @@ public class MovieList {
     
     public MovieList(){
         
-        Movie movie1 = new Movie("Name","director","genre","desc");
+        movieList = new ArrayList();
         
+        Movie movie1 = new Movie("The Sandlot","David Mickey Evans","Comedy","Baseball and scary dog");
+        Movie movie2 = new Movie("The Lion King", "Roger Allers", "Drama", "Dad lion dies and son lion runs away");
         movieList.add(movie1);
+        movieList.add(movie2);
         
         
+    }
+    
+    public void addMovies(Movie movie)
+    {
+        getMovieList().add(movie);
+    }
+
+    public ArrayList<Movie> getMovieList() {
+        return movieList;
     }
     
 }

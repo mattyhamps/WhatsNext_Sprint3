@@ -12,14 +12,15 @@ package WhatsNext_Sprint3;
 public class Movie {
     private String movieTitle;
     private String movieDirector;
-    private String description;
+    private String movieDescription;
     private String genre;
     
-    public Movie(String aMovieTitle, String aMovieDirector, String aGenre, String aDescription){
+    
+    public Movie(String aMovieTitle, String aMovieDirector, String aGenre, String aMovieDescription){
         this.movieTitle = aMovieTitle;
         this.movieDirector = aMovieDirector;
         this.genre = aGenre;
-        this.description = aDescription;
+        this.movieDescription = aMovieDescription;
     }
 
     public String getMovieTitle() {
@@ -44,6 +45,14 @@ public class Movie {
 
     public void setGenre(String genre) {
         this.genre = genre;
+    }
+
+    public String getMovieDescription() {
+        return movieDescription;
+    }
+
+    public void setMovieDescription(String movieDescription) {
+        this.movieDescription = movieDescription;
     }
     
 }
