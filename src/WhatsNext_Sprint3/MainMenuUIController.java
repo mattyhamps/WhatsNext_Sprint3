@@ -69,7 +69,22 @@ public class MainMenuUIController {
 
         }
     }
+    @FXML protected void handleLogOutButtonAction(ActionEvent event) {
+        
+        
+        try{
+            Stage stage1 = (Stage)pane.getScene().getWindow();
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Login.fxml"));
+            Parent root = (Parent) fxmlLoader.load();
+            stage1.setWidth(600);
+            Scene scene = new Scene(root, 400, 300);
+            stage1.setScene(scene);
 
+            stage1.show();
+        }catch(Exception e){
+
+        }
+    }
         
     
     
