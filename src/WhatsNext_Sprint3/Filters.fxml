@@ -20,7 +20,7 @@
       <CheckBox layoutX="80.0" layoutY="71.0" mnemonicParsing="false" text="Comedy" />
       <CheckBox layoutX="80.0" layoutY="91.0" mnemonicParsing="false" text="Drama" />
       <CheckBox layoutX="259.0" layoutY="71.0" mnemonicParsing="false" text="Horror" />
-      <CheckBox layoutX="259.0" layoutY="91.0" mnemonicParsing="false" text="Action" />
+      <CheckBox layoutX="259.0" layoutY="91.0" mnemonicParsing="false" text="Fantasy" />
       <Button layoutX="164.0" layoutY="331.0" mnemonicParsing="false" text="Apply Filters" />
       <Label layoutX="102.0" layoutY="189.0" text="LIKE" />
       <Label layoutX="73.0" layoutY="214.0" text="NOT LIKE" />
