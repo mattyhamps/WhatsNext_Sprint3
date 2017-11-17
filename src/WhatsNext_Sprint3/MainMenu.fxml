@@ -15,8 +15,8 @@
           <font>
             <Font size="30.0" />
           </font></Text>
-      <Button layoutX="30.0" layoutY="100.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="150.0" text="Search for a Book" />
-      <Button layoutX="220.0" layoutY="100.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="150.0" text="Search for a Movie" />
+      <Button layoutX="30.0" layoutY="100.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="150.0" text="Search for a Book" onAction="#handleSearchBookButtonAction"/>
+      <Button layoutX="220.0" layoutY="100.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="150.0" text="Search for a Movie" onAction="#handleSearchMovieButtonAction"/>
       <Button layoutX="125.0" layoutY="200.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="150.0" text="Settings" />
       <Button layoutX="125.0" layoutY="250.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="150.0" text="Help" />
       <Button layoutX="125.0" layoutY="300.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="150.0" text="Log Out" />

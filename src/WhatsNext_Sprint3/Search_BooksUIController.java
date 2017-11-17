@@ -13,20 +13,19 @@ import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
-
 /**
  *
- * @author mattb
+ * @author Laura
  */
-public class MainMenuUIController {
+public class Search_BooksUIController {
     @FXML private AnchorPane pane;
     
-    @FXML protected void handleProfileButtonAction(ActionEvent event) {
+    @FXML protected void handleBookFilterButtonAction(ActionEvent event) {
         
         
         try{
             Stage stage1 = (Stage)pane.getScene().getWindow();
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("CreateProfile.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Filters.fxml"));
             Parent root = (Parent) fxmlLoader.load();
             stage1.setWidth(600);
             Scene scene = new Scene(root, 600, 400);
@@ -37,15 +36,15 @@ public class MainMenuUIController {
 
         }
     }
-    @FXML protected void handleSearchMovieButtonAction(ActionEvent event) {
+    @FXML protected void handleReturnMainMenuButtonAction(ActionEvent event) {
         
         
         try{
             Stage stage1 = (Stage)pane.getScene().getWindow();
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Search_Movie.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("MainMenu.fxml"));
             Parent root = (Parent) fxmlLoader.load();
             stage1.setWidth(600);
-            Scene scene = new Scene(root, 400, 400);
+            Scene scene = new Scene(root, 600, 400);
             stage1.setScene(scene);
 
             stage1.show();
@@ -53,24 +52,4 @@ public class MainMenuUIController {
 
         }
     }
-    @FXML protected void handleSearchBookButtonAction(ActionEvent event) {
-        
-        
-        try{
-            Stage stage1 = (Stage)pane.getScene().getWindow();
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Search_Books.fxml"));
-            Parent root = (Parent) fxmlLoader.load();
-            stage1.setWidth(600);
-            Scene scene = new Scene(root, 400, 400);
-            stage1.setScene(scene);
-
-            stage1.show();
-        }catch(Exception e){
-
-        }
-    }
-
-        
-    
-    
 }
