@@ -74,16 +74,18 @@ public class Search_MovieUIController {
         TheSearchEngine search = new TheSearchEngine();
         results = search.movieSearch(query);       
         System.out.println(results);
+        
+        
         try{
-            //Send Results here
-            Stage stage1 = (Stage)pane.getScene().getWindow();
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("MainMenu.fxml"));
-            Parent root = (Parent) fxmlLoader.load();
-            stage1.setWidth(400);
-            Scene scene = new Scene(root, 400, 400);
-            stage1.setScene(scene);
             
+            Stage stage1 = (Stage)pane.getScene().getWindow();
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("SearchResult.fxml"));
+            Parent root = (Parent) fxmlLoader.load();
+            Scene scene = new Scene(root, 450, 800);
+            stage1.setScene(scene);
             stage1.show();
+            SearchResultController theSearchResultsController = SearchResultController.getSearchResultController();
+            theSearchResultsController.setMovieList(results);
         }catch(Exception e){
 
         }
