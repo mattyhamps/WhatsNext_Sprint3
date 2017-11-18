@@ -31,9 +31,8 @@ public class BookList {
         
         bookList.add(book1);
         bookList.add(book2);
-  
-        
-        
+        bookList.add(book3);
+        bookList.add(book4);
     }
     
     public void addBooks(Book book)

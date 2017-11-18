@@ -5,6 +5,10 @@
  */
 package WhatsNext_Sprint3;
 
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+
 /**
  *
  * @author mattb
@@ -17,6 +21,7 @@ public class LoginController {
     {
         this.userList = new UserList(); // Initializes List
         this.theLoginUIController = a;
+        LoginUIController login = new LoginUIController();
         
     }
     

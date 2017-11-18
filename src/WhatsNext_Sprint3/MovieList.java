@@ -12,7 +12,7 @@ import java.util.ArrayList;
  * @author Laura
  */
 public class MovieList {
-    private ArrayList <Movie> movieList;
+    private static ArrayList <Movie> movieList;
     
     public MovieList(){
         

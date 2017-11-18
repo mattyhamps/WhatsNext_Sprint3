@@ -44,7 +44,7 @@ public class MainMenuUIController {
             Stage stage1 = (Stage)pane.getScene().getWindow();
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Search_Movie.fxml"));
             Parent root = (Parent) fxmlLoader.load();
-            stage1.setWidth(600);
+            stage1.setWidth(400);
             Scene scene = new Scene(root, 400, 400);
             stage1.setScene(scene);
 
@@ -60,7 +60,7 @@ public class MainMenuUIController {
             Stage stage1 = (Stage)pane.getScene().getWindow();
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Search_Books.fxml"));
             Parent root = (Parent) fxmlLoader.load();
-            stage1.setWidth(600);
+            stage1.setWidth(400);
             Scene scene = new Scene(root, 400, 400);
             stage1.setScene(scene);
 
@@ -76,7 +76,7 @@ public class MainMenuUIController {
             Stage stage1 = (Stage)pane.getScene().getWindow();
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("Login.fxml"));
             Parent root = (Parent) fxmlLoader.load();
-            stage1.setWidth(600);
+            stage1.setWidth(400);
             Scene scene = new Scene(root, 400, 300);
             stage1.setScene(scene);
 

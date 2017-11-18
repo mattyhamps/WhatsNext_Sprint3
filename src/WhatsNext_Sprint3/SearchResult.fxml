@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="400.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.151" fx:controller="WhatsNext_Sprint3.SearchResultController">
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="400.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WhatsNext_Sprint3.SearchResultController">
     <stylesheets>
         <URL value="@searchresult.css" />
     </stylesheets>
@@ -20,7 +20,7 @@
       </Text>
       <TextField layoutX="37.0" layoutY="72.0" prefHeight="25.0" prefWidth="295.0" />
       <Button layoutX="332.0" layoutY="73.0" mnemonicParsing="false" text="GO!" />
-      <ListView layoutX="112.0" layoutY="131.0" prefHeight="200.0" prefWidth="200.0" />
-      <Button layoutX="145.0" layoutY="96.0" mnemonicParsing="false" text="Return to the Home Page" />
+      <ListView layoutX="112.0" layoutY="150.0" prefHeight="200.0" prefWidth="200.0" />
+      <Button layoutX="145.0" layoutY="115.0" mnemonicParsing="false" text="Return to the Home Page" />
    </children>
 </AnchorPane>
