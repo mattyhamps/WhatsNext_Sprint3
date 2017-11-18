@@ -5,11 +5,14 @@
  */
 package WhatsNext_Sprint3;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
@@ -19,6 +22,9 @@ import javafx.stage.Stage;
  */
 public class Search_BooksUIController {
     @FXML private AnchorPane pane;
+    @FXML private TextField searchTerms;
+    
+    private ArrayList<Book> results;
     
     @FXML protected void handleBookFilterButtonAction(ActionEvent event) {
         
@@ -48,6 +54,35 @@ public class Search_BooksUIController {
             stage1.setScene(scene);
 
             stage1.show();
+        }catch(Exception e){
+
+        }
+    }
+    
+    @FXML protected void handlSearchMenuButtonAction(ActionEvent event) {
+        
+        String text = searchTerms.getText();
+        
+        text = text.toLowerCase();
+        
+        
+        ArrayList<String> terms = new ArrayList<>(Arrays.asList(text.split(" ")));
+        
+        Query query = new Query(null, terms, null); // Creates a query of only positive terms.
+        TheSearchEngine search = new TheSearchEngine();
+        results = search.bookSearch(query);       
+        System.out.println(results);
+        
+        
+        try{
+            Stage stage1 = (Stage)pane.getScene().getWindow();
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("SearchResult.fxml"));
+            Parent root = (Parent) fxmlLoader.load();
+            Scene scene = new Scene(root, 450, 800);
+            stage1.setScene(scene);
+            stage1.show();
+            SearchResultController theSearchResultsController = SearchResultController.getSearchResultController();
+            //theSearchResultsController.setBookList(results);
         }catch(Exception e){
 
         }
