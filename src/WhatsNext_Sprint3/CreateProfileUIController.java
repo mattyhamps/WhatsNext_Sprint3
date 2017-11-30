@@ -24,7 +24,7 @@ public class CreateProfileUIController {
     @FXML private PasswordField cpassword;
     @FXML private PasswordField password;
     @FXML private AnchorPane pane;
-    private ProfileList profileList = ProfileList.getTheProfileList();
+    private UserList userList = new UserList();
     
     
     @FXML protected void handleNewProfileButtonAction(ActionEvent event) {
@@ -33,8 +33,8 @@ public class CreateProfileUIController {
         String theCPassword = cpassword.getText();
         if(thePassword.equals(theCPassword))
         {
-            Profile profile = new Profile(username.getText(), cpassword.getText());
-            profileList.addProfile(profile);
+            User user = new User(username.getText(), cpassword.getText());
+            userList.addUsers(user);
             try{
                 Stage stage1 = (Stage)pane.getScene().getWindow();
                 FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("MainMenu.fxml"));

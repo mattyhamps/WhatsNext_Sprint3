@@ -46,7 +46,7 @@ public class MovieList {
         getMovieList().add(movie);
     }
 
-    public ArrayList<Movie> getMovieList() {
+    public ArrayList<Movie> getMovieList() {    
         return movieList;
     }
     
