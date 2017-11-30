@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" fx:id="pane" prefHeight="400.0" prefWidth="400.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.151" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WhatsNext_Sprint3.LoginUIController">
+<AnchorPane id="AnchorPane" fx:id="pane" prefHeight="600.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.151" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WhatsNext_Sprint3.LoginUIController">
     
     <padding>
         <Insets bottom="10" left="25" right="25" top="25" />
@@ -21,16 +21,16 @@
         <URL value="@Login.css" />
     </stylesheets>
     
-    <Text fill="BLACK" layoutX="142.0" layoutY="123.0" text="Welcome">
+    <Text fill="BLACK" layoutX="241.0" layoutY="240.0" text="Welcome">
       <font>
          <Font size="30.0" />
       </font></Text>
-    <Label layoutX="95.0" layoutY="150.0" text="Username:" />
-    <TextField fx:id="username" layoutX="175.0" layoutY="150.0" />
-    <Label layoutX="95.0" layoutY="190.0" text="Password:" />
-    <PasswordField fx:id="password" layoutX="175.0" layoutY="190.0" />
-    <HBox />
-    <Text fx:id="actiontarget" layoutX="95.0" layoutY="280.0" />
-     <Button layoutX="175.0" layoutY="230.0" onAction="#handleSubmitButtonAction" text="Sign In" />
+    <Label layoutX="194.0" layoutY="267.0" text="Username:" />
+    <TextField fx:id="username" layoutX="274.0" layoutY="267.0" />
+    <Label layoutX="194.0" layoutY="307.0" text="Password:" />
+    <PasswordField fx:id="password" layoutX="274.0" layoutY="307.0" />
+    <HBox layoutX="114.0" layoutY="158.0" />
+    <Text fx:id="actiontarget" layoutX="209.0" layoutY="438.0" />
+     <Button layoutX="274.0" layoutY="347.0" onAction="#handleSubmitButtonAction" text="Sign In" />
    
 </AnchorPane>
