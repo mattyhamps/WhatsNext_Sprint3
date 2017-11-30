@@ -15,11 +15,11 @@
           <font>
             <Font size="30.0" />
           </font></Text>
-      <Button layoutX="130.0" layoutY="214.0" mnemonicParsing="false" onAction="#handleSearchBookButtonAction" prefHeight="30.0" prefWidth="150.0" text="Search for a Book" />
-      <Button layoutX="320.0" layoutY="214.0" mnemonicParsing="false" onAction="#handleSearchMovieButtonAction" prefHeight="30.0" prefWidth="150.0" text="Search for a Movie" />
-      <Button layoutX="225.0" layoutY="314.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="150.0" text="Settings" />
-      <Button layoutX="225.0" layoutY="364.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="150.0" text="Help" />
-      <Button layoutX="225.0" layoutY="414.0" mnemonicParsing="false" onAction="#handleLogOutButtonAction" prefHeight="30.0" prefWidth="150.0" text="Log Out" />
-      <Button layoutX="225.0" layoutY="264.0" mnemonicParsing="false" onAction="#handleProfileButtonAction" prefHeight="30.0" prefWidth="150.0" text="Create New Profile" />
+      <Button fx:id="BookSearchButton" layoutX="130.0" layoutY="214.0" mnemonicParsing="false" onAction="#handleSearchBookButtonAction" prefHeight="30.0" prefWidth="150.0" text="Search for a Book" />
+      <Button fx:id="MovieSearchButton" layoutX="320.0" layoutY="214.0" mnemonicParsing="false" onAction="#handleSearchMovieButtonAction" prefHeight="30.0" prefWidth="150.0" text="Search for a Movie" />
+      <Button fx:id="SettingsButton" layoutX="225.0" layoutY="314.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="150.0" text="Settings" />
+      <Button fx:id="HelpButton" layoutX="225.0" layoutY="364.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="150.0" text="Help" />
+      <Button fx:id="LogOutButton" layoutX="225.0" layoutY="414.0" mnemonicParsing="false" onAction="#handleLogOutButtonAction" prefHeight="30.0" prefWidth="150.0" text="Log Out" />
+      <Button fx:id="NewProfileButton" layoutX="225.0" layoutY="264.0" mnemonicParsing="false" onAction="#handleProfileButtonAction" prefHeight="30.0" prefWidth="150.0" text="Create New Profile" />
    </children>
 </AnchorPane>

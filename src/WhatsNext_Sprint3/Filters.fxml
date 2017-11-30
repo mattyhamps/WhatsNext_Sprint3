@@ -21,14 +21,14 @@
       <CheckBox fx:id="drama" layoutX="80.0" layoutY="91.0" mnemonicParsing="false" text="Drama" />
       <CheckBox fx:id="horror" layoutX="259.0" layoutY="71.0" mnemonicParsing="false" text="Horror" />
       <CheckBox fx:id="fantasy" layoutX="259.0" layoutY="91.0" mnemonicParsing="false" text="Fantasy" />
-      <Button layoutX="181.0" layoutY="329.0" mnemonicParsing="false" onAction="#handleSearchAction" text="Search" />
+      <Button fx:id="SearchButton" layoutX="181.0" layoutY="329.0" mnemonicParsing="false" onAction="#handleSearchAction" text="Search" />
       <Label layoutX="102.0" layoutY="189.0" text="LIKE" />
       <Label layoutX="73.0" layoutY="214.0" text="NOT LIKE" />
       <TextField fx:id="positiveFilters" layoutX="139.0" layoutY="185.0" />
       <TextField fx:id="negativeFilters" layoutX="139.0" layoutY="219.0" />
       <CheckBox fx:id="incognito" layoutX="60.0" layoutY="308.0" mnemonicParsing="false" text="When checked, the search will be incognito" />
-      <Button layoutX="300.0" layoutY="186.0" mnemonicParsing="false" text="OK" />
-      <Button layoutX="300.0" layoutY="220.0" mnemonicParsing="false" text="OK" />
+      <Button fx:id="LikeOKButton" layoutX="300.0" layoutY="186.0" mnemonicParsing="false" text="OK" />
+      <Button fx:id="NotLikeOKButton" layoutX="300.0" layoutY="220.0" mnemonicParsing="false" text="OK" />
       <Text layoutX="163.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Filters">
          <font>
             <Font size="30.0" />

@@ -25,6 +25,6 @@
       <Label layoutX="171.0" layoutY="218.0" text="Username" textFill="Black" />
       <Label layoutX="171.0" layoutY="268.0" text="Password" textFill="Black" />
       <Label layoutX="171.0" layoutY="328.0" text="Confirm Password" textFill="Black" />
-      <Button layoutX="281.0" layoutY="419.0" mnemonicParsing="false" onAction="#handleNewProfileButtonAction" text="Return to Main Menu" />
+      <Button fx:id="MMButton" layoutX="281.0" layoutY="419.0" mnemonicParsing="false" onAction="#handleNewProfileButtonAction" text="Return to Main Menu" />
    </children>
 </AnchorPane>

@@ -31,6 +31,6 @@
     <PasswordField fx:id="password" layoutX="274.0" layoutY="307.0" />
     <HBox layoutX="114.0" layoutY="158.0" />
     <Text fx:id="actiontarget" layoutX="209.0" layoutY="438.0" />
-     <Button layoutX="274.0" layoutY="347.0" onAction="#handleSubmitButtonAction" text="Sign In" />
+    <Button fx:id="SignInButton" layoutX="274.0" layoutY="347.0" onAction="#handleSubmitButtonAction" text="Sign In" />
    
 </AnchorPane>

@@ -22,9 +22,9 @@
             <Font size="20.0" />
          </font>
       </Text>
-      <TextField layoutX="201.0" layoutY="291.0" />
-      <Button layoutX="350.0" layoutY="291.0" mnemonicParsing="false" text="Search" />
-      <Button layoutX="243.0" layoutY="325.0" mnemonicParsing="false" onAction="#handleBookFilterButtonAction" text="Add Filters" />
-      <Button layoutX="239.0" layoutY="382.0" mnemonicParsing="false" onAction="#handleReturnMainMenuButtonAction" text="Return to Main Menu" />
+      <TextField fx:id="searchTerms" layoutX="201.0" layoutY="291.0" />
+      <Button fx:id="SearchButton" layoutX="350.0" layoutY="291.0" mnemonicParsing="false" text="Search" />
+      <Button fx:id="ASearchButton" layoutX="243.0" layoutY="325.0" mnemonicParsing="false" onAction="#handleBookFilterButtonAction" text="Advanced Search" />
+      <Button fx:id="MMButton" layoutX="239.0" layoutY="382.0" mnemonicParsing="false" onAction="#handleReturnMainMenuButtonAction" text="Return to Main Menu" />
    </children>
 </AnchorPane>
