@@ -3,7 +3,7 @@ root {
     display: block;
 }
 .root {
--fx-background-color: #99ccff;
+-fx-background-color: #990000;
 }
 .label {
     -fx-font-size: 12px;
@@ -28,6 +28,6 @@ root {
     -fx-text-fill: #000000;
     -fx-font-family: "Arial Narrow";
     -fx-font-weight: bold;
-    -fx-background-color: linear-gradient(#ff944d, #ffb380);
+    -fx-background-color: linear-gradient(#ffff66, #ffff99);
     -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.6) , 5, 0.0 , 0 , 1 );
 }
