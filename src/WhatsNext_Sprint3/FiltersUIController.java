@@ -83,6 +83,7 @@ public class FiltersUIController {
                 searchGenres.add("thriller");
             }    
             
+           
             
             Query query = new Query(searchGenres, terms, negTerms); // Creates a query of only positive terms.
             TheSearchEngine search = new TheSearchEngine();

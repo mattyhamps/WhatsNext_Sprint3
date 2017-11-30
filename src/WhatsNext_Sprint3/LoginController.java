@@ -5,23 +5,32 @@
  */
 package WhatsNext_Sprint3;
 
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.text.Text;
+import javafx.stage.Stage;
 
 /**
  *
  * @author mattb
  */
 public class LoginController {
+    @FXML private Text actiontarget;
+    @FXML private TextField username;
+    @FXML private PasswordField password;
+    @FXML private AnchorPane pane;
     private UserList userList;
-    private LoginUIController theLoginUIController;
     
-    public LoginController(LoginUIController a)
+    
+    public LoginController()
     {
         this.userList = new UserList(); // Initializes List
-        this.theLoginUIController = a;
-        LoginUIController login = new LoginUIController();
         
     }
     
@@ -45,6 +54,39 @@ public class LoginController {
         }
         
         return false;
+    }
+    @FXML protected void handleSubmitButtonAction(ActionEvent event) {
+        
+        
+        String u = username.getText();
+        String p = password.getText();
+        
+        boolean isAuthenticated = requestAuthenticate(u, p);
+
+        if(isAuthenticated){
+            
+            /* Code to open Main Menu goes here*/
+            try{
+                Stage stage1 = (Stage)pane.getScene().getWindow();
+                FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("MainMenu.fxml"));
+                Parent root = (Parent) fxmlLoader.load();
+                
+                Scene scene = new Scene(root, 400, 400);
+                stage1.setHeight(400);
+                stage1.setWidth(400);
+                
+                stage1.setScene(scene);
+
+                stage1.show();
+            }catch(Exception e){
+
+            }
+        }else{
+            username.setText(null);
+            password.setText(null);
+            actiontarget.setText("Enter valid username and password");
+        }
+       
     }
     
 }

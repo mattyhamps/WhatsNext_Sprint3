@@ -20,7 +20,7 @@ public class WhatsNext extends Application {
     @Override
     public void start(Stage stage) throws Exception {
         
-        LoginUIController login = new LoginUIController();
+        LoginController login = new LoginController();
         Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));
         Scene scene = new Scene(root, 400, 300);
         
