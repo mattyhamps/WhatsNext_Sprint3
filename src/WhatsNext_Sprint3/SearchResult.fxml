@@ -7,17 +7,17 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="400.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WhatsNext_Sprint3.SearchResultController">
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.151" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WhatsNext_Sprint3.SearchResultController">
     <stylesheets>
         <URL value="@WhatsNextStyleSheet.css" />
     </stylesheets>
    <children>
-      <Text layoutX="165.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Results">
+      <Text fill="WHITE" layoutX="259.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Results">
          <font>
             <Font size="30.0" />
          </font>
       </Text>
-      <ListView fx:id="list" layoutX="40.0" layoutY="86.0" prefHeight="245.0" prefWidth="333.0" />
-      <Button layoutX="219.0" layoutY="359.0" mnemonicParsing="false" text="Return to the Home Page" />
+      <ListView fx:id="list" layoutX="134.0" layoutY="184.0" prefHeight="245.0" prefWidth="333.0" />
+      <Button layoutX="313.0" layoutY="457.0" mnemonicParsing="false" text="Return to the Home Page" />
    </children>
 </AnchorPane>
