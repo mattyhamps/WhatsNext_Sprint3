@@ -8,7 +8,7 @@
 
 <AnchorPane id="AnchorPane" fx:id="pane" prefHeight="600.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.151" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WhatsNext_Sprint3.MainMenuUIController">
     <stylesheets>
-        <URL value="@MainMenu.css" />
+        <URL value="@WhatsNextStyleSheet.css" />
     </stylesheets>
    <children>
       <Text fill="BLACK" layoutX="225.0" layoutY="189.0" text="Main Menu">

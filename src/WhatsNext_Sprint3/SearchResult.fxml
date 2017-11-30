@@ -9,7 +9,7 @@
 
 <AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="400.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WhatsNext_Sprint3.SearchResultController">
     <stylesheets>
-        <URL value="@searchresult.css" />
+        <URL value="@WhatsNextStyleSheet.css" />
     </stylesheets>
    <children>
       <Text layoutX="165.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Results">

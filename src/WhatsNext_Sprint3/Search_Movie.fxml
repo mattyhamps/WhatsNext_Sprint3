@@ -9,7 +9,7 @@
 
 <AnchorPane id="AnchorPane" fx:id="pane" prefHeight="400.0" prefWidth="400.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WhatsNext_Sprint3.Search_MovieUIController">
     <stylesheets>
-        <URL value="@Search.css" />
+        <URL value="@WhatsNextStyleSheet.css" />
     </stylesheets>
    <children>
       <Text layoutX="156.0" layoutY="110.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search">
