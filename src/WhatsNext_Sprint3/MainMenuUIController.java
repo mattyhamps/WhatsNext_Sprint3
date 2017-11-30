@@ -85,6 +85,21 @@ public class MainMenuUIController {
 
         }
     }
+    @FXML protected void handleHistoryRecommendationAction(ActionEvent event) {
+        
+        try{
+            Stage stage1 = (Stage)pane.getScene().getWindow();
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("SearchResult.fxml"));
+            Parent root = (Parent) fxmlLoader.load();
+            stage1.setWidth(400);
+            Scene scene = new Scene(root, 400, 300);
+            stage1.setScene(scene);
+
+            stage1.show();
+        }catch(Exception e){
+
+        }
+    }
         
     
     
