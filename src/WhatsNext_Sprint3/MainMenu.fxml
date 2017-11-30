@@ -11,7 +11,7 @@
         <URL value="@WhatsNextStyleSheet.css" />
     </stylesheets>
    <children>
-      <Text fill="BLACK" layoutX="225.0" layoutY="189.0" text="Main Menu">
+      <Text fill="WHITE" layoutX="225.0" layoutY="189.0" text="Main Menu">
           <font>
             <Font size="30.0" />
           </font></Text>

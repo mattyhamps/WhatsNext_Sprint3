@@ -12,12 +12,12 @@
         <URL value="@WhatsNextStyleSheet.css" />
     </stylesheets>
    <children>
-      <Text layoutX="262.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search">
+      <Text fill="WHITE" layoutX="262.0" layoutY="227.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search">
          <font>
             <Font size="30.0" />
          </font>
       </Text>
-      <Text layoutX="279.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Books">
+      <Text fill="WHITE" layoutX="279.0" layoutY="256.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Books">
          <font>
             <Font size="20.0" />
          </font>
