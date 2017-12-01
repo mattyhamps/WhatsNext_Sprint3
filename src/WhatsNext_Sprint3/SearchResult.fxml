@@ -18,6 +18,6 @@
          </font>
       </Text>
       <ListView fx:id="ResultList" layoutX="134.0" layoutY="184.0" prefHeight="245.0" prefWidth="333.0" />
-      <Button fx:id="MMButton" layoutX="313.0" layoutY="457.0" mnemonicParsing="false" text="Return to the Home Page" />
+      <Button fx:id="MMButton" layoutX="313.0" layoutY="457.0" mnemonicParsing="false" text="Return to the Home Page" onAction="#handleReturnMainMenuButtonAction" />
    </children>
 </AnchorPane>
