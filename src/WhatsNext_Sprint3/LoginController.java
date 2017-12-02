@@ -21,11 +21,15 @@ import javafx.stage.Stage;
  * @author mattb
  */
 public class LoginController {
+
+    
+
     @FXML private Text actiontarget;
     @FXML private TextField username;
     @FXML private PasswordField password;
     @FXML private AnchorPane pane;
     private UserList userList;
+    private User theLoggedInUser;
     
     
     public LoginController()
@@ -47,7 +51,7 @@ public class LoginController {
                 if(authPassword.equals(u.getPassword()))
                 {
                     System.out.println("Password checked"); 
-                    
+                    this.theLoggedInUser = u;
                     return true;
                 }
             }
@@ -88,5 +92,13 @@ public class LoginController {
         }
        
     }
+    
+    /**
+     * @return the theLoggedInUser
+     */
+    public User getTheLoggedInUser() {
+        return theLoggedInUser;
+    }
+
     
 }
