@@ -5,15 +5,14 @@
  */
 package WhatsNext_Sprint3;
 
+
+
 /**
+ * FXML Controller class
  *
- * @author Laura
+ * @author djb5755
  */
-public class CreateProfileController {
-   // private ProfileList pList;
-    
-    public CreateProfileController(){
-        
-    }
+public class MoodProfileController {
+ 
     
 }

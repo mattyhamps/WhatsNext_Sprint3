@@ -87,4 +87,15 @@ public class SearchResultController implements Initializable {
         this.movieList = movieList;
         list.refresh();
     }
+    
+//    public ArrayList<Book> getBookList() {
+//        return bookList;
+//    }
+//
+//    
+//    public void setBookList(ArrayList<Book> bookList) {
+//        System.out.println("SET LIST");
+//        this.bookList = bookList;
+//        list.refresh();
+//    }
 }

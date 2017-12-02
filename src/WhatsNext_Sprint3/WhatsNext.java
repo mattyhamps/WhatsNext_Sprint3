@@ -22,7 +22,7 @@ public class WhatsNext extends Application {
         
         LoginController login = new LoginController();
         Parent root = FXMLLoader.load(getClass().getResource("Login.fxml"));
-        Scene scene = new Scene(root, 400, 300);
+        Scene scene = new Scene(root, 600, 600);
         
         stage.setTitle("Welcome to What's Next");
         stage.setScene(scene);

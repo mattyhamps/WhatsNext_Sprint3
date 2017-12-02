@@ -19,7 +19,7 @@ import javafx.stage.Stage;
  *
  * @author Laura
  */
-public class CreateProfileUIController {
+public class CreateUserController {
     @FXML private TextField username;
     @FXML private PasswordField cpassword;
     @FXML private PasswordField password;
@@ -39,8 +39,8 @@ public class CreateProfileUIController {
                 Stage stage1 = (Stage)pane.getScene().getWindow();
                 FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("MainMenu.fxml"));
                 Parent root = (Parent) fxmlLoader.load();
-                stage1.setWidth(400);
-                Scene scene = new Scene(root, 400, 400);
+                //stage1.setWidth(400);
+                Scene scene = new Scene(root, 600, 600);
                 stage1.setScene(scene);
 
                 stage1.show();
@@ -55,8 +55,8 @@ public class CreateProfileUIController {
             Stage stage1 = (Stage)pane.getScene().getWindow();
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("MainMenu.fxml"));
             Parent root = (Parent) fxmlLoader.load();
-            stage1.setWidth(400);
-            Scene scene = new Scene(root, 400, 400);
+            //stage1.setWidth(400);
+            Scene scene = new Scene(root, 600, 600);
             stage1.setScene(scene);
 
             stage1.show();
