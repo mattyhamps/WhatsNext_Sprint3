@@ -10,7 +10,7 @@ package WhatsNext_Sprint3;
  * @author Laura
  */
 public class CreateProfileController {
-    private ProfileList pList;
+   // private ProfileList pList;
     
     public CreateProfileController(){
         

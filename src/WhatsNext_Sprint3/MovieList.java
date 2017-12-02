@@ -5,13 +5,14 @@
  */
 package WhatsNext_Sprint3;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
  *
  * @author Laura
  */
-public class MovieList {
+public class MovieList implements Serializable{
     private static ArrayList <Movie> movieList;
     
     public MovieList(){

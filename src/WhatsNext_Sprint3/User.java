@@ -15,11 +15,15 @@ public class User {
     
     private String username;
     private String password;
+    private QueryHistory bookSearchHistory;
+    private QueryHistory movieSearchHistory;
     
     public User(String u, String p) 
     {
         this.username = u;
         this.password = p;
+        this.bookSearchHistory = new QueryHistory();
+        this.movieSearchHistory = new QueryHistory();
     }
 
     public String getUsername() {
@@ -36,5 +40,11 @@ public class User {
 
     public void setPassword(String password) {
         this.password = password;
+    }
+    public QueryHistory getBookSearchHistory() {
+        return this.bookSearchHistory;
+    }
+    public QueryHistory getMovieSearchHistory() {
+        return this.movieSearchHistory;
     }
 }
