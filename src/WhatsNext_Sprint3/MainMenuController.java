@@ -89,7 +89,7 @@ public class MainMenuController {
         
         try{
             Stage stage1 = (Stage)pane.getScene().getWindow();
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("SearchResult.fxml"));
+            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("SearchHistory.fxml"));
             Parent root = (Parent) fxmlLoader.load();
             //stage1.setWidth(400);
             Scene scene = new Scene(root, 600, 600);
