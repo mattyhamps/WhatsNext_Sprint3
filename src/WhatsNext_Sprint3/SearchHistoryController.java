@@ -6,6 +6,7 @@ package WhatsNext_Sprint3;
  * and open the template in the editor.
  */
 
+import java.util.ArrayList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -24,13 +25,64 @@ public class SearchHistoryController{
 
     @FXML private AnchorPane pane;
     @FXML private ListView recs;
+    private ArrayList<Movie> results;
+    private ArrayList<Query> history;
     
-    private QueryHistory history;
+    private ArrayList<String> masterGenres; 
+    private ArrayList<String> masterPositiveFilters; 
+    private ArrayList<String> masterNegativeFilters; 
     
     public SearchHistoryController()
     {
-        history = LoginController.getLoginController().getTheLoggedInUser().getMovieSearchHistory();
+        history = LoginController.getLoginController().getTheLoggedInUser().getMovieSearchHistory().queryHistory;
         System.out.println(history);
+        if(!history.isEmpty())
+        {
+            if(history.size() <= 3)
+            {
+                for(Query q:history)
+                {
+                    for(String g: q.getGenres())
+                    {
+                        masterGenres.add(g);
+                    }
+                    for(String p: q.getPositiveFilters())
+                    {
+                        masterPositiveFilters.add(p);
+                    }
+                    for(String n: q.getNegativeFilters())
+                    {
+                        masterNegativeFilters.add(n);
+                    }
+                    
+                }
+            }
+            else{
+                for(int i = 1; i<=3; i++)
+                {
+                    Query theQuery = history.get(history.size()-i);
+                    for(String g: theQuery.getGenres())
+                    {
+                        masterGenres.add(g);
+                    }
+                    for(String p: theQuery.getPositiveFilters())
+                    {
+                        masterPositiveFilters.add(p);
+                    }
+                    for(String n: theQuery.getNegativeFilters())
+                    {
+                        masterNegativeFilters.add(n);
+                    }
+                    
+                }
+            }
+            
+        }
+        
+        Query historyBasedQuery = new Query(masterGenres, masterPositiveFilters, masterNegativeFilters);
+        TheSearchEngine search = new TheSearchEngine();
+        results = search.movieSearch(historyBasedQuery);
+        System.out.println(results);
         // Show history based recommendations in recs
     }
     
