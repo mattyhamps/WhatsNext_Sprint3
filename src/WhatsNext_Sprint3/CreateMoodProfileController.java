@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package WhatsNext_Sprint3;
 
 import javafx.event.ActionEvent;
@@ -13,11 +8,6 @@ import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
-/**
- * FXML Controller class
- *
- * @author djb5755
- */
 public class CreateMoodProfileController{
 
     @FXML private AnchorPane pane;
