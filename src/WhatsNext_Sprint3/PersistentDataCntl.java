@@ -5,6 +5,7 @@
  */
 package WhatsNext_Sprint3;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -23,12 +24,23 @@ public class PersistentDataCntl {
     private final String DATA_FILE_NAME = "AppData.ser";
     
     private PersistentDataCntl(){
-        readSerializedDataModel(); 
+        if (serializeDataFileExists()) {
+                System.out.println("Serialized Object Exists");
+                readSerializedDataModel();
+               
+            } else {
+                System.out.println("Serialized Object Does Not Exist, Writing New");
+                thePeristentDataCollection = new PeristentDataCollection();
+                writeSerializedDataModel();
+                readSerializedDataModel(); 
+        }
+        /*
+        readSerializedDataModel();
         if(thePeristentDataCollection == null){
             thePeristentDataCollection = new PeristentDataCollection();
             writeSerializedDataModel();
             readSerializedDataModel(); 
-        }
+        }*/
     }
     
     public static PersistentDataCntl getPersistentDataCntl(){
@@ -46,12 +58,14 @@ public class PersistentDataCntl {
         FileInputStream fis = null;
         ObjectInputStream in = null;
         String filePath = EXTERNAL_DATA_PATH+DATA_FILE_NAME;
+        System.out.println(EXTERNAL_DATA_PATH+DATA_FILE_NAME);
         try
             {
             fis = new FileInputStream(filePath);
             in = new ObjectInputStream(fis);
             thePeristentDataCollection = (PeristentDataCollection) in.readObject();
             in.close();
+            fis.close();
             }
         catch(IOException ex)
             {
@@ -68,17 +82,22 @@ public class PersistentDataCntl {
         FileOutputStream fos = null;
         ObjectOutputStream out = null;
         String filePath = EXTERNAL_DATA_PATH+DATA_FILE_NAME;
+
         try
             {
             fos = new FileOutputStream(filePath);
             out = new ObjectOutputStream(fos);
             out.writeObject(thePeristentDataCollection);
             out.close();
+            fos.close();
             }
         catch(IOException ex)
             {
             ex.printStackTrace();
             }
        }
-    
+    public boolean serializeDataFileExists() {
+        File f = new File(EXTERNAL_DATA_PATH+DATA_FILE_NAME);
+        return (f.exists());
+    }
 }
