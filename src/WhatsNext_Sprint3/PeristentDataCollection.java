@@ -9,12 +9,13 @@ import java.io.*;
 
 /**
  *
- * @author SHaynes
+ * @author mattb
  */
 public class PeristentDataCollection implements Serializable{
     
     private UserList theUserList;
     private MovieList theMovieList;
+    private BookList theBookList;
     
     // All other persistent data will go below here
     
@@ -25,7 +26,9 @@ public class PeristentDataCollection implements Serializable{
         if(theMovieList == null){
             theMovieList = new MovieList();
         }
-        
+        if(theBookList == null){
+            theBookList = new BookList();
+        }
         
     }
     

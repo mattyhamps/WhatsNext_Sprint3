@@ -11,6 +11,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.ListView;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
@@ -22,12 +23,15 @@ import javafx.stage.Stage;
 public class SearchHistoryController{
 
     @FXML private AnchorPane pane;
+    @FXML private ListView recs;
+    
     private QueryHistory history;
     
     public SearchHistoryController()
     {
         history = LoginController.getLoginController().getTheLoggedInUser().getMovieSearchHistory();
         System.out.println(history);
+        // Show history based recommendations in recs
     }
     
     @FXML protected void handleReturnMainMenuButtonAction(ActionEvent event) {
