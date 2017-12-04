@@ -22,6 +22,14 @@ import javafx.stage.Stage;
 public class SearchHistoryController{
 
     @FXML private AnchorPane pane;
+    private QueryHistory history;
+    
+    public SearchHistoryController()
+    {
+        history = LoginController.getLoginController().getTheLoggedInUser().getMovieSearchHistory();
+        System.out.println(history);
+    }
+    
     @FXML protected void handleReturnMainMenuButtonAction(ActionEvent event) {
         
         

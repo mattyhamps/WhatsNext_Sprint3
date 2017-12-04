@@ -5,16 +5,17 @@
  */
 package WhatsNext_Sprint3;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 
 /**
  *
  * @author Laura 
  */
-public class BookList {
+public class BookList implements Serializable{
     private ArrayList <Book> bookList;
     
-    public BookList(){
+    public BookList() {
         
         bookList = new ArrayList();
         

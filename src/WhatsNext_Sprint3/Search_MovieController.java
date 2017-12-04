@@ -71,8 +71,9 @@ public class Search_MovieController {
         ArrayList<String> terms = new ArrayList<>(Arrays.asList(text.split(" ")));
         
         Query query = new Query(null, terms, null); // Creates a query of only positive terms.
+        LoginController.getLoginController().getTheLoggedInUser().getMovieSearchHistory().addToHistory(query);
         TheSearchEngine search = new TheSearchEngine();
-        results = search.movieSearch(query);       
+        results = search.movieSearch(query);
         System.out.println(results);
         
         

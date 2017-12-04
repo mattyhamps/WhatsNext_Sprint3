@@ -28,14 +28,25 @@ public class LoginController {
     @FXML private TextField username;
     @FXML private PasswordField password;
     @FXML private AnchorPane pane;
+    private static LoginController theLoginController;
     private UserList userList;
     private User theLoggedInUser;
     
     
     public LoginController()
     {
+        theLoginController = this;
         this.userList = new UserList(); // Initializes List
-        
+        PersistentDataCntl.getPersistentDataCntl().writeSerializedDataModel();
+    }
+    
+    public static LoginController getLoginController(){
+        if(theLoginController != null){
+            return theLoginController;
+        }else{
+            theLoginController = new LoginController();
+            return theLoginController;
+        }
     }
     
     public boolean requestAuthenticate(String authUsername, String authPassword)

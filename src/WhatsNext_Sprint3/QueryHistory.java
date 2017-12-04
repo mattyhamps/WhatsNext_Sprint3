@@ -23,4 +23,8 @@ public class QueryHistory implements Serializable {
     {
         queryHistory.add(q);
     }
+    
+    public ArrayList<Query> getHistory(){
+        return queryHistory;
+    }
 }
